@@ -47,10 +47,10 @@ function Bio() {
               Written by <strong>{author}</strong> ผู้นำด้าน SMS ครบวงจร, ช่องทางการสื่อสารธุรกิจคุณ ที่เข้าถึงลูกค้าได้ไวที่สุด.
               {` `}
               {/* <a href={`https://twitter.com/${social.twitter}`}>
-                ThaiBulkSMS.com
+                movider.co
               </a> */}
-              <a href={`https://www.thaibulksms.com`} style={{ boxShadow: "none" }}>
-                ThaiBulkSMS.com
+              <a href={`https://movider.co/th`} style={{ boxShadow: "none" }}>
+                Movider.co
               </a>
 
             </p>

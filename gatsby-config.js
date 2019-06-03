@@ -2,8 +2,8 @@ module.exports = {
   pathPrefix: `/blog`,
   siteMetadata: {
     title: `Blog`,
-    author: `ThaibulkSMS`,
-    description: `ThaibulkSMS blog.`,
+    author: `Movider`,
+    description: `Movider blog.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `kylemathews`,
@@ -59,13 +59,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ThaibulkSMS Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Movider Starter Blog`,
+        short_name: `Movider`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/1moby-icon.webp`,
+        icon: `content/assets/movider.webp`,
       },
     },
     `gatsby-plugin-offline`,

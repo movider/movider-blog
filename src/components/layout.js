@@ -22,10 +22,10 @@ class Layout extends React.Component {
           textAlign: "center"
         }}
       >
-        <a href="https://www.thaibulksms.com/blog/" style={{
+        <a href="https://movider.co/blog/" style={{
           boxShadow: "none",
           display: "block"
-        }}><img src="/blog/images/logo.webp" alt="logo" /></a>
+        }}><img src="/blog/images/logo.svg" alt="logo" /></a>
 
         <hr className="hrLogo" />
         {/* {title} */}
@@ -43,10 +43,10 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, <a href={`https://www.thaibulksms.com`} style={{
+          © {new Date().getFullYear()}, <a href={`https://movider.co`} style={{
             boxShadow: "none"
           }}>
-            ThaibulkSMS.com
+            Movider.co
               </a>
           {` `}
         </footer>
