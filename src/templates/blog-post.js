@@ -5,7 +5,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import { rhythm, scale } from "../utils/typography"
-import { rhythm } from "../utils/typography"
+// import { rhythm } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -17,36 +17,31 @@ class BlogPostTemplate extends React.Component {
       // <Layout location={this.props.location} title={siteTitle}>
       <Layout location={this.props.location}>
         <SEO
-          title={"ThaibulkSMS - " + post.frontmatter.title}
+          title={"Movider - " + post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h2 style={{
-          marginBottom: "10px",
-        }}>{post.frontmatter.title}</h2>
-        {/* <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p> */}
 
-        <div className="post_detail post_date">
-          <span className="post_info_date details">
-            <span>{post.frontmatter.date}</span>
-          </span>
+        <div className="moviderBorder">
+          <div className="picCover">
+            <img src={post.frontmatter.thumbnail} alt="content" style={{
+              marginBottom: "0px"
+            }} />
+          </div>
+          <h2 style={{
+            marginTop: "1.2rem",
+            marginBottom: "10px",
+            color: "rgb(62, 70, 91)"
+          }}>{post.frontmatter.title}</h2>
+
+          <div className="post_detail post_date">
+            <span className="post_info_date details">
+              <span>{post.frontmatter.date}</span>
+            </span>
+          </div>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
 
 
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
         <Bio />
 
         <ul
@@ -82,20 +77,21 @@ export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
+          site {
+        siteMetadata {
+          title
         author
+        }
       }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
+    markdownRemark(fields: {slug: {eq: $slug } }) {
+          id
       excerpt(pruneLength: 160)
-      html
+        html
       frontmatter {
-        title
+          title
         date(formatString: "MMMM DD, YYYY")
         description
+        thumbnail
       }
     }
   }

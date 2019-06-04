@@ -14,23 +14,27 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="ThaibulkSMS" />
+        <SEO title="Movider" />
 
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <div key={node.fields.slug} style={{
-              borderBottom: "1px solid rgb(225, 225, 225)"
-            }}>
-              <h2
+            <div key={node.fields.slug} className="moviderBorder moviCenter">
+              <Link to={node.fields.slug}>
+                <div className="picCover">
+                  <img src={node.frontmatter.thumbnail} alt="content" />
+                </div>
+              </Link>
+              <h2 className="titleContent"
                 style={{
+                  marginTop: "0.3rem",
                   marginBottom: rhythm(1 / 4),
                   textAlign: "center"
                 }}
               >
                 <Link style={{
                   boxShadow: `none`,
-                  color: "#403e3d"
+                  color: "rgb(62, 70, 91)"
                 }} to={node.fields.slug}>
                   {title}
                 </Link>
@@ -41,16 +45,17 @@ class BlogIndex extends React.Component {
                   <span>{node.frontmatter.date}</span>
                 </span>
               </div>
-              <Link to={node.fields.slug}>
-                <div className="picCover">
-                  <img src={node.frontmatter.thumbnail} alt="content" />
-                </div>
-              </Link>
+
               <p
                 dangerouslySetInnerHTML={{
                   __html: node.frontmatter.description || node.excerpt,
                 }}
               />
+
+              <Link className="continueReading" to={node.fields.slug}>
+                Continue Reading →
+              </Link>
+
             </div>
           )
         })}
