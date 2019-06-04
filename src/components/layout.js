@@ -25,9 +25,7 @@ class Layout extends React.Component {
         <a href="https://movider.co/blog/" style={{
           boxShadow: "none",
           display: "block"
-        }}><img src="/blog/images/logo.svg" alt="logo" /></a>
-
-        <hr className="hrLogo" />
+        }}><img className="logo" src="/blog/images/logo.svg" alt="logo" /></a>
         {/* {title} */}
       </h1 >
     )
