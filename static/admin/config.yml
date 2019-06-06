@@ -5,12 +5,13 @@ backend:
   name: github # Or gitlab
   repo: movider/movider-blog # Your username and repository
   branch: master # Branch to use
-  base_url: https://b54i9wbacg.execute-api.ap-southeast-1.amazonaws.com # The base URL for your Firebase Function
+  base_url: https://y70dljgt70.execute-api.ap-southeast-1.amazonaws.com # The base URL for your Firebase Function
   auth_endpoint: /prod/auth # The path to the OAuth endpoint of the function
 #x
 
 media_folder: static/img
-public_folder: /img
+public_folder: /blog/img
+site_url: https://movider.co/blog
 
 collections:
   - name: "blog"
