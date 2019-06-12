@@ -51,8 +51,8 @@ class BlogIndex extends React.Component {
             }
             alt = "content" / >
             <
-            /div> <
-            /Link> <
+            /div> < /
+            Link > <
             h2 className = "titleContent"
             style = {
               {
@@ -73,8 +73,8 @@ class BlogIndex extends React.Component {
             } > {
               title
             } <
-            /Link> <
-            /h2>
+            /Link> < /
+            h2 >
 
             <
             div className = "post_detail post_date" >
@@ -83,8 +83,8 @@ class BlogIndex extends React.Component {
             <
             span > {
               node.frontmatter.date
-            } < /span> <
-            /span> <
+            } < /span> < /
+            span > <
             /div>
 
             <

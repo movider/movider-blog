@@ -22,6 +22,13 @@ header  a img {
 
 .picCover {
   text-align: center;
+  width: 100%;
+}
+
+.picCover img {
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
 }
 
 .post_detail.post_date {
@@ -75,6 +82,7 @@ header  a img {
   padding: 10px 10px;
   color: rgb(102, 109, 113);
   font-size: 17px;
+  padding: 20px;
 }
 
 .moviderBorder h2 {
