@@ -14,9 +14,9 @@ h1, h2, h3, h4, h5 {
 
 header {
   background-color: #fff;
-  padding-top: 20px;
+  padding-top: 10px;
   max-width: 100%;
-  min-height: 100px;
+  min-height: 90px;
 }
 
 header .wrapper-header {
@@ -47,6 +47,10 @@ img.logo {
   object-fit: cover;
   height: 250px;
   width: 100%;
+}
+
+.picCover img.inside-cover {
+  height: 400px;
 }
 
 .post_detail.post_date {
@@ -100,10 +104,15 @@ img.logo {
   color: rgb(102, 109, 113);
   font-size: 17px;
   padding: 10px;
+  width: 100%;
 }
 
 .moviderBorder.moviCenter {
   text-align: center;
+}
+
+h2.titleContent a {
+  display: block
 }
 
 h2.titleContent a:hover {
@@ -136,16 +145,18 @@ h2.titleContent a:hover {
 .main-width .wrapper-blog {
   flex: 1 1 300px;
   margin: 0 10px 20px;
-  min-height: 500px;
 }
 
 .main-width .wrapper-blog .content-blog {
   padding: 0 10px;
+  min-height: 300px;
 }
 
 .main-width .wrapper-blog .content-blog p {
   text-align: left;
   margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 footer {
@@ -175,6 +186,16 @@ div.text-blogpage p, p.text-written {
 
 h2, h2 a {
   font-size: 30px;
-  margin: 40px 0;
+  margin: 0 0 20px;
   text-align: left;
+}
+
+.blog-detail {
+  padding: 30px 20px;
+}
+
+.blog-detail img {
+  width: 70%;
+  display: block;
+  margin: 40px auto;
 }

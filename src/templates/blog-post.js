@@ -23,23 +23,26 @@ class BlogPostTemplate extends React.Component {
 
         <div className="moviderBorder">
           <div className="picCover">
-            <img src={post.frontmatter.thumbnail} alt="content" style={{
+            <img className="inside-cover" src={post.frontmatter.thumbnail} alt="content" style={{
               marginBottom: "0px"
             }} />
           </div>
-          <h2 style={{
-            marginTop: "1.2rem",
-            marginBottom: "10px",
-            color: "rgb(62, 70, 91)"
-          }}>{post.frontmatter.title}</h2>
+          <div className="blog-detail">
+            <h1 style={{
+              marginTop: "1.2rem",
+              marginBottom: "10px"
+            }}>{post.frontmatter.title}
+            </h1>
 
-          <div className="post_detail post_date">
-            <span className="post_info_date details">
-              <span>{post.frontmatter.date}</span>
-            </span>
+            <div className="post_detail post_date">
+              <span className="post_info_date details">
+                <span>{post.frontmatter.date}</span>
+              </span>
+            </div>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </div>
+        
 
 
         <Bio />
