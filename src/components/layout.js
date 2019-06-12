@@ -18,53 +18,40 @@ class Layout extends React.Component {
 
     // }
 
-    header = ( <
-      h1 style = {
-        {
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-          textAlign: "center"
-        }
-      } >
-      <
-      a href = "https://movider.co/blog/"
-      style = {
-        {
-          boxShadow: "none",
-          display: "block"
-        }
-      } > < img className = "logo"
-      src = "/blog/images/movider_logo.svg"
-      alt = "logo" / > < /a> {
-        /* {title} */ } <
-      /h1 >
+    header = (
+      <div className="wrapper-header">
+        <h1 style={
+          {
+            ...scale(1.5),
+            marginBottom: rhythm(1.5),
+            marginTop: 0,
+            textAlign: "center"
+          }
+        } >
+          <a href="https://movider.co/blog/"
+            style={
+              {
+                boxShadow: "none",
+                display: "block"
+              }
+            } > < img className="logo"
+              src="/blog/images/movider_logo.svg"
+              alt="logo" /> </a> {
+          /* {title} */} </h1 >
+      </div>
     )
-    return ( <
-      div >
-      <
-      header > {
-        header
-      } < /header> <
-      main className = "main-width" > {
-        children
-      } < /main> <
-      footer > ©{
-        new Date().getFullYear()
-      }, < a href = {
-        `https://movider.co`
-      }
-      style = {
-        {
-          boxShadow: "none"
-        }
-      } >
-      Movider.co <
-      /a> {
-        ` `
-      } <
-      /footer> <
-      /div>
+    return (<div>
+      <header > {header} </header>
+      <main className="main-width" > {children} </main>
+      <footer> ©{new Date().getFullYear()}, <a href={`https://movider.co`}
+        style={
+          {
+            boxShadow: "none"
+          }
+        } >
+        Movider.co </a> {` `}
+      </footer>
+    </div>
     )
   }
 }
