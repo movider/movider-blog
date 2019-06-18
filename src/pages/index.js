@@ -36,7 +36,8 @@ class BlogIndex extends React.Component {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div className="wrapper-blog">
-              <div key={node.fields.slug} className="moviderBorder moviCenter" >
+              <div class="blog-card">
+                <div key={node.fields.slug} className="moviderBorder moviCenter" >
                 <Link to={node.fields.slug} >
                   <div className="picCover" >
                     <img src={node.frontmatter.thumbnail} alt="content" />
@@ -82,7 +83,7 @@ class BlogIndex extends React.Component {
                       Continue Reading→
                     </Link>
                   </div>
-
+                </div>     
               </div>
             </div>
           )
