@@ -23,12 +23,7 @@ function Bio() {
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginLeft: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-              }}
+              className="imgauthor"
             />
             <p className="text-written">
               Written by <strong>{author}</strong> , Move Your Communication Forward.
@@ -48,7 +43,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-              avatar: file(absolutePath: {regex: "/profile-pic.jpg/" }) {
+              avatar: file(absolutePath: {regex: "/icon-movider.png/" }) {
               childImageSharp {
             fixed(width: 50, height: 50) {
               ...GatsbyImageSharpFixed
