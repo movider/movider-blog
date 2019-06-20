@@ -31,7 +31,7 @@ function Bio() {
               }}
             />
             <p className="text-written">
-              Written by <strong>{author}</strong> Movider, Move Your Communication Forward.
+              Written by <strong>{author}</strong> , Move Your Communication Forward.
               {` `}
               {/* <a href={`https://twitter.com/${social.twitter}`}>
                 movider.co
