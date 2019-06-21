@@ -23,7 +23,7 @@ function Bio() {
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
-              className="imgauthor"
+              className="img-author"
             />
             <p className="text-written">
               Written by <strong>{author}</strong> , Move Your Communication Forward.
