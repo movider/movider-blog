@@ -32,8 +32,9 @@ $response = curl_exec($curl);$err = curl_error($curl);curl_close($curl);if ($err
 
 4. If everything was set correctly, you will get a response like this.
 
+
 ```
 {     "remaining_balance":3.49211382,   "total_sms":1,   "phone_number_list":[        {           "number":"<YOUR_DESTINATION_PHONE_NUMBER>",         "message_id":"j9sPvkZrHFjFPH0p9UUXJM",         "price":0.0140625      }   ],   "bad_phone_number_list":[     ]}
 ```
 
-5. Done! Take a coffee break.
+5. Done! Take your coffee break.
