@@ -7,16 +7,15 @@ description: Simple steps to send SMS messages from your system with PHP using M
 Let's get started.
 
 1. [Sign-up](https://dashboard.movider.co/sign-up) at Movider to get an account. If you already have one, please [sign-in](https://dashboard.movider.co/sign-in) instead.
-
 2. After signed-in, go to [Setting](https://dashboard.movider.co/setting), you will see your API key and API secret.
-
 3. Make to request as following example.
 
 3.1 Define your parameters.
 
-```
-$apiKey="<YOUR_API_KEY>";$apiSecret="<YOUR_API_SECRET>";$message="<YOUR_MESSAGE>";$phone="<YOUR_DESTINATION_PHONE_NUMBER>";
-```
+`$apiKey="<YOUR_API_KEY>";`\
+`$apiSecret="<YOUR_API_SECRET>";`\
+`$message="<YOUR_MESSAGE>";`\
+`$phone="<YOUR_DESTINATION_PHONE_NUMBER>";`
 
 3.2 Initiate a cURL and set options as follow.
 
@@ -31,6 +30,7 @@ $response = curl_exec($curl);$err = curl_error($curl);curl_close($curl);if ($err
 ```
 
 4. If everything was set correctly, you will get a response like this.
+
 
 ```
 {     "remaining_balance":3.49211382,   "total_sms":1,   "phone_number_list":[        {           "number":"<YOUR_DESTINATION_PHONE_NUMBER>",         "message_id":"j9sPvkZrHFjFPH0p9UUXJM",         "price":0.0140625      }   ],   "bad_phone_number_list":[     ]}
