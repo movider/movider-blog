@@ -6,7 +6,7 @@ description: >-
   Movider is the Cloud Communication Platform. You can use Movider APIs service
   for sending Programmable SMS and Phone Verification.
 ---
-# **“What can you do with Movider?”**
+**“What can you do with Movider?”**
 
 ![Movider SMS API](/blog/img/facebook-like-ads.png "Build Something Great With Movider SMS API")
 
