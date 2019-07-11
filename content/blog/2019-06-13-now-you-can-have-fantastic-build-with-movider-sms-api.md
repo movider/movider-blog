@@ -1,14 +1,12 @@
 ---
 title: Now You Can Have Fantastic Build With Movider SMS API.
-thumbnail: /blog/img/blog-cover1.png
+thumbnail: /blog/img/blog1-build-with-movider.png
 date: 2019-06-13T10:39:53.325Z
 description: >-
   Movider is the Cloud Communication Platform. You can use Movider APIs service
   for sending Programmable SMS and Phone Verification.
 ---
 **“What can you do with Movider?”**
-
-![Movider SMS API](/blog/img/facebook-like-ads.png "Build Something Great With Movider SMS API")
 
 Now it’s time to introduce you to the Movider Cloud Communication Platform. You can use Movider APIs service for sending **Programmable SMS and Phone Verification.** 
 
