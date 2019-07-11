@@ -1,6 +1,6 @@
 ---
 title: Is SMS still alive in the business world today?
-thumbnail: /blog/img/blog-cover2.png
+thumbnail: /blog/img/blog-cover2-alive.png
 date: 2019-07-10T10:00:47.584Z
 description: ' Is SMS still alive in the business world today?  With the three main reasons for Global Reach, High Response Rates, and Avoiding Spam, we guarantee you that Yes, SMS is still alive in the business world today.'
 ---
@@ -18,7 +18,7 @@ Time passes so fast until today. You as a marketer or the business owner may hav
 
 **High Response Rates** - Believe it or not, SMS has over 90% open rate, while emails have about a 29%. That means if you want to communicate to your users precisely with a clear call to action, SMS is the answer for you. You can inform your customers with sales, service offers, discounts, or the new products via SMS. Your customers take a few seconds to open and read your message with SMS. 
 
-![Movider Anti Spam SMS](/blog/img/oe5mu20.jpg "Movider Anti Spam SMS")
+![Movider Anti Spam SMS](/blog/img/movider-sms-anti-spam.png "Movider Anti Spam SMS")
 
 **Avoiding Spam** - Compare to email marketing, **SMS marketing** seems to be only 10% considered to be spam. With the power of 160 characters, your SMS must be concise and direct to the point with the clear call to action for your receivers. Plus, SMS sending is authentic because the brands or the companies must send the messages via the carriers. If the mobile carriers have found the spam, they'll block those messages right away.
 
