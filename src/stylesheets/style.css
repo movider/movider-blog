@@ -45,7 +45,7 @@ img.logo {
 
 .picCover img {
   object-fit: cover;
-  height: 250px;
+  /* height: 250px; */
   width: 100%;
   object-position: 50% 50%;
 }
