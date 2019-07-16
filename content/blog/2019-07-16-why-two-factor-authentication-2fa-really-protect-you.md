@@ -19,7 +19,7 @@ Consumers are overwhelmed by the various passwords they have to remember to acce
 
 **So what is the best alternative?**
 
-Have you ever watch a sci-fi movie that has scenes of identity verification? Authentication like retina scanning, fingerprints are what we meant to. If you consider this option, you need to bring the hardware and require the physical of your customer to place on for getting access.
+Have you ever watch a sci-fi movie that has scenes of identity verification? Authentication like retina scanning, fingerprints are what we meant to. If you consider this option, you need to bring the hardware and require the physical of your customer to place on for getting access. So, should we move to the SMS Two-Factor Authentication?
 
 ## **The Advantages Of SMS Two-Factor Authentication**
 
@@ -32,11 +32,8 @@ Password is also important. But what we want to represent to you is that it's be
 **So, Let's see the benefits of SMS Two-Factor Authentication API.**
 
 1. You don't need the complexity of installing any hardware on your system.
-
 2. Undoubtedly, your customers have their mobile phone and what you need are only their numbers.
-
 3. The hackers can not stop an SMS code sent through the GSM network. 
-
 4. Sending SMS authentication code with API can save you a lot of business budget. 
 
 ![Movider 2FA for your user](/blog/img/2fa.jpg "Protect your user account with Movider 2FA API.")
