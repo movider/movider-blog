@@ -3,7 +3,6 @@ title: How to send an SMS with PHP using Movider API?
 thumbnail: /blog/img/php.jpg
 date: 2019-07-10T09:06:15.702Z
 description: Simple steps to send SMS messages from your system with PHP using Movider API.
-keywords: 'sms api, php'
 ---
 Are you the big fan of PHP? If Yes, then you're reading the right post. 
 
@@ -13,7 +12,7 @@ In this guide, we'll show you **how to send SMS messages in your PHP web applica
 
 1. [Sign-up](https://dashboard.movider.co/sign-up) at Movider to get an account. If you already have one, please [sign-in](https://dashboard.movider.co/sign-in) instead.
 2. After signed-in, go to [Setting](https://dashboard.movider.co/setting), you will see your API key and API secret.
-3. Make to request as following example.
+3. Make the request as following example.
 
 3.1 Define your parameters.
 
