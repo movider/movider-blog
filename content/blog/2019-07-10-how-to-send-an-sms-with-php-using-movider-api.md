@@ -16,65 +16,19 @@ In this guide, we'll show you **how to send SMS messages in your PHP web applica
 
 3.1 Define your parameters.
 
-```
-$apiKey="<YOUR_API_KEY>";
-$apiSecret="<YOUR_API_SECRET>";
-$message="<YOUR_MESSAGE>";
-$phone="<YOUR_DESTINATION_PHONE_NUMBER>";
-```
+<script src="https://gist.github.com/patipol/db0a7354d75b23261da8de0e4787b64d.js"></script>
 
 3.2 Initiate a cURL and set options as follow.
 
-```
-$curl = curl_init();
-curl_setopt_array($curl, array(
-  CURLOPT_URL => "https://api.movider.co/v1/sms",
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => "",
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 30,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => "POST",
-  CURLOPT_POSTFIELDS => "api_key=$apiKey&api_secret=$apiSecret&text=$message&to=$phone",
-  CURLOPT_HTTPHEADER => array(
-    "Accept: ",
-    "Content-Type: application/x-www-form-urlencoded",
-    "cache-control: no-cache"
-  ),
-));
-```
+<script src="https://gist.github.com/patipol/3cd24040373b5ac895b3a46d2dc72da4.js"></script>
 
 3.3 Run your code and get the response. Also see whether there is any error.
 
-```
-$response = curl_exec($curl);
-$err = curl_error($curl);
-curl_close($curl);
-if ($err) {
-  echo "cURL Error #:" . $err;
-} else {
-  echo $response;
-}
-```
+<script src="https://gist.github.com/patipol/4f10ba908fe3c8ff16624baaf7a7ac98.js"></script>
 
 4. If everything was set correctly, you will get a response like this.
 
-
-```
-{
-  "remaining_balance":3.49211382,
-  "total_sms":1,
-  "phone_number_list":[
-    {
-      "number":"<YOUR_DESTINATION_PHONE_NUMBER>",
-      "message_id":"j9sPvkZrHFjFPH0p9UUXJM",
-      "price":0.0140625
-    }
-  ],
-  "bad_phone_number_list":[
-  ]
-}
-```
+<script src="https://gist.github.com/patipol/5f22f54c533e70d3a73c27239d67f87e.js"></script>
 
 5. Done! Take your coffee break.
 
