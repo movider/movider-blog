@@ -1,6 +1,6 @@
 ---
 title: How to send an SMS with Python using Movider API?
-thumbnail: /blog/img/php.png
+thumbnail: /blog/img/movider_python.png
 date: 2019-07-17T07:21:08.174Z
 description: >-
   Simple steps to send SMS messages from your system with Python using Movider
