@@ -16,55 +16,23 @@ Think about Python, and you may notice the data science. Python is one of the po
 
 3.1 Import a library named `requests`.
 
-```
-import requests
-```
+<script src="https://gist.github.com/patipol/f8ec55619a890a798c8e348fcd57dc93.js"></script>
 
 3.2 Define your parameters
 
-```
-api_key = "<YOUR_API_KEY>"
-api_secret = "<YOUR_API_SECRET>"
-to = "<YOUR_DESTINATION_PHONE_NUMBER>"
-text = "<YOUR_MESSAGE>"
-```
+<script src="https://gist.github.com/patipol/c042edab9280dc309a4bfb29f6c8b647.js"></script>
 
 3.3 Construct a payload and headers.
 
-```
-payload = "api_key="+api_key+"&api_secret="+api_secret+"&to="+to+"&text="+text
-headers = {
-    'accept': "application/json",
-    'content-type': "application/x-www-form-urlencoded"
-    }
-```
+<script src="https://gist.github.com/patipol/2cbcedd710564611c5c7a9822d773e2d.js"></script>
 
 3.4 Make a request to our endpoint using previous payload and headers, take the returned response, and print it out.
 
-```
-response = requests.request("POST", "https://api.movider.co/v1/sms", data=payload, headers=headers)
-
-print(response.text)
-```
+<script src="https://gist.github.com/patipol/b3f34cee2b754e934382725dbd117381.js"></script>
 
 4. If everything was set correctly, you will get a response like this.
 
-
-```
-{
-  "remaining_balance":3.49211382,
-  "total_sms":1,
-  "phone_number_list":[
-    {
-      "number":"<YOUR_DESTINATION_PHONE_NUMBER>",
-      "message_id":"j9sPvkZrHFjFPH0p9UUXJM",
-      "price":0.0140625
-    }
-  ],
-  "bad_phone_number_list":[
-  ]
-}
-```
+<script src="https://gist.github.com/patipol/5f22f54c533e70d3a73c27239d67f87e.js"></script>
 
 5. Done! Take your coffee break.
 
