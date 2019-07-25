@@ -6,7 +6,7 @@ description: >-
   Simple steps to send SMS messages from your system with JavaScript using
   Movider API.
 ---
-# Simple steps to send SMS messages from your system with JavaScript using Movider API.
+**Simple steps to send SMS messages from your system with JavaScript using Movider API.**
 
 In this guide, we'll show you how to use Movider's Programmable SMS to send SMS messages from your JavaScript.
 
