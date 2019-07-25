@@ -1,11 +1,15 @@
 ---
 title: How to send an SMS with JavaScript using Movider API?
-thumbnail: /blog/img/headere_page.jpg
+thumbnail: /blog/img/movider_blog_java.png
 date: 2019-07-18T06:41:58.736Z
 description: >-
   Simple steps to send SMS messages from your system with JavaScript using
   Movider API.
 ---
+# Simple steps to send SMS messages from your system with JavaScript using Movider API.
+
+In this guide, we'll show you how to use Movider's Programmable SMS to send SMS messages from your JavaScript.
+
 **Let's get started.** 😉
 
 1. [Sign-up](https://dashboard.movider.co/sign-up) at Movider to get an account. If you already have one, please [sign-in](https://dashboard.movider.co/sign-in) instead.
@@ -29,3 +33,5 @@ description: >-
 <script src="https://gist.github.com/patipol/5f22f54c533e70d3a73c27239d67f87e.js"></script>
 
 5. Done! Take your coffee break.
+
+See, How easy is that? Now If you want to learn more about Movider API Reference, please visit https://developer.movider.co/reference
