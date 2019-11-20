@@ -22,8 +22,8 @@ Bulk SMS Communication is affordable for SME or new Startups who might not have 
 
 **4. Mobile-Friendly Advantage**\
 Ensure that you can reach your customers on their mobile phone on their hand immediately. SMS has no problems with mobile experience as marketing media. \
-****\
-**5. SMS Is More Reliable Than Email** \
+\
+**5. SMS Is More Reliable Than Email**\
 Sending some critical marketing messages to your users with emails mostly goes straight to the spam folder. Email response rates also rarely higher above 1%. SMS is an advantage for you for the open-rate of the users. It makes the receiver feel more personal with more readily accessible than emails.
 
 **6. SMS Is Excellent For Consumer Data Collection** \
