@@ -1,7 +1,7 @@
 ---
 title: Movider SMS Notification
 thumbnail: /blog/img/movider-blog-.jpg
-date: 2020-07-23T04:12:00.000Z
+date: 2020-07-23T05:01:00.000Z
 description: >-
   Good news for Woo-commerce fans! You can use Movider SMS Notification on your
   Woo-commerce site NOW.  By installing our Plugin on your website, and you will
