@@ -23,7 +23,7 @@ class BlogPostTemplate extends React.Component {
 
         <div className="moviderBorder">
           <div className="picCover">
-            <img className="inside-cover" src={post.frontmatter.thumbnail} alt="content" style={{
+            <img src={post.frontmatter.thumbnail} alt="content" style={{
               marginBottom: "0px"
             }} />
           </div>
@@ -54,6 +54,7 @@ class BlogPostTemplate extends React.Component {
             justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
+            width: `100%`,
           }}
         >
           <li>

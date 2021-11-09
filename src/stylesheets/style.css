@@ -45,7 +45,7 @@ img.logo {
 
 .picCover img {
   object-fit: cover;
-  height: 250px;
+  /* height: 250px; */
   width: 100%;
   object-position: 50% 50%;
 }
@@ -204,6 +204,12 @@ div.text-blogpage p, p.text-written {
   align-items: center;       
   border-bottom: 1px solid #ccc;     
   padding-bottom: 20px;          
+}
+
+.written .img-author {
+  min-width: 50px;
+  margin: 0 20px;
+  background-color: #fff;
 }
 
 h2, h2 a {

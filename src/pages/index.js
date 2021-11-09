@@ -34,15 +34,12 @@ class BlogIndex extends React.Component {
           return (
             <div className="wrapper-blog">
               <div class="blog-card">
-                <div
-                  key={node.fields.slug}
-                  className="moviderBorder moviCenter"
-                >
-                  <Link to={node.fields.slug}>
-                    <div className="picCover">
-                      <img src={node.frontmatter.thumbnail} alt="content" />
-                    </div>
-                  </Link>
+                <div key={node.fields.slug} className="moviderBorder moviCenter" >
+                <Link to={node.fields.slug} >
+                  <div className="picCover" >
+                    <img src={node.frontmatter.thumbnail} alt="content" />
+                  </div>
+                </Link >
                   <div className="content-blog">
                     <h2
                       className="titleContent"
@@ -79,7 +76,7 @@ class BlogIndex extends React.Component {
                       Continue Reading→
                     </Link>
                   </div>
-                </div>
+                </div>     
               </div>
             </div>
           )

@@ -23,20 +23,18 @@ function Bio() {
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
-              style={{
-                marginRight: rhythm(1 / 2),
-                marginLeft: rhythm(1 / 2),
-                marginBottom: 0,
-                minWidth: 50,
-              }}
+              className="img-author"
             />
             <p className="text-written">
-              Written by <strong>{author}</strong> Movider, Move Your Communication Forward.
+              Written by <strong>{author}</strong>, Move Your Communication
+              Forward.
               {` `}
               {/* <a href={`https://twitter.com/${social.twitter}`}>
                 movider.co
               </a> */}
-              <a href={`https://movider.co`} style={{ boxShadow: "none" }}>Movider.co</a>
+              <a href={`https://movider.co`} style={{ boxShadow: "none" }}>
+                Movider.co
+              </a>
             </p>
             <br />
           </div>
@@ -48,22 +46,22 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-              avatar: file(absolutePath: {regex: "/profile-pic.jpg/" }) {
-              childImageSharp {
-            fixed(width: 50, height: 50) {
-              ...GatsbyImageSharpFixed
-            }
-            }
-          }
-    site {
-              siteMetadata {
-            author
-        social {
-              twitter
-            }
-            }
-          }
+    avatar: file(absolutePath: { regex: "/icon-movider.png/" }) {
+      childImageSharp {
+        fixed(width: 50, height: 50) {
+          ...GatsbyImageSharpFixed
         }
-      `
+      }
+    }
+    site {
+      siteMetadata {
+        author
+        social {
+          twitter
+        }
+      }
+    }
+  }
+`
 
 export default Bio
