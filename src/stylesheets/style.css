@@ -137,13 +137,22 @@ h2.titleContent a:hover {
 
 .main-width {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
 .main-width .wrapper-blog {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.main-width .wrapper-blog .blog-card{
   flex: 1 1 300px;
   margin: 0 10px 20px;
 }
@@ -183,6 +192,18 @@ div.wrapper-blogdetail {
 
 div.text-blogpage p, p.text-written {
   color: #7f8995;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+.written {
+  flex: 1;
+  display: flex;
+  width: 100%; 
+  align-items: center;       
+  border-bottom: 1px solid #ccc;     
+  padding-bottom: 20px;          
 }
 
 h2, h2 a {

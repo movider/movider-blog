@@ -19,39 +19,24 @@ function Bio() {
         const { author } = data.site.siteMetadata
         // const { author, social } = data.site.siteMetadata
         return (
-          <div
-            style={{
-              display: `flex`,
-              marginBottom: rhythm(2.5),
-              borderBottom: "1px solid rgb(225, 225, 225)",
-              // borderTop: "1px solid rgb(225, 225, 225)",
-              paddingBottom: "8px",
-              paddingTop: "80px",
-              // marginTop: "55px"
-            }}
-          >
+          <div className="written">
             <Image
               fixed={data.avatar.childImageSharp.fixed}
               alt={author}
               style={{
                 marginRight: rhythm(1 / 2),
+                marginLeft: rhythm(1 / 2),
                 marginBottom: 0,
                 minWidth: 50,
-                borderRadius: `100%`,
-              }}
-              imgStyle={{
-                borderRadius: `50%`,
               }}
             />
             <p className="text-written">
-              Written by <strong>{author}</strong> ผู้นำด้าน SMS ครบวงจร, ช่องทางการสื่อสารธุรกิจคุณ ที่เข้าถึงลูกค้าได้ไวที่สุด.
+              Written by <strong>{author}</strong> Movider, Move Your Communication Forward.
               {` `}
               {/* <a href={`https://twitter.com/${social.twitter}`}>
                 movider.co
               </a> */}
-              <a href={`https://movider.co/th`} style={{ boxShadow: "none" }}>
-                Movider.co
-              </a>
+              <a href={`https://movider.co`} style={{ boxShadow: "none" }}>Movider.co</a>
             </p>
             <br />
           </div>
