@@ -5,8 +5,8 @@ import { rhythm, scale } from "../utils/typography"
 class Layout extends React.Component {
   componentDidMount() {
     const tagManagerArgs = {
-      gtmId: "GTM-WPP2498",
-      // process.env.NODE_ENV.trim() === "production"? "GTM-WPP2498": "GTM-KPJ9G6X",
+      gtmId:
+        process.env.NODE_ENV === "development" ? "GTM-KPJ9G6X" : "GTM-WPP2498",
     }
 
     TagManager.initialize(tagManagerArgs)
