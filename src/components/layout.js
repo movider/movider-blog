@@ -1,15 +1,19 @@
 import React from "react"
 // import { Link } from "gatsby"
+import TagManager from "react-gtm-module"
+import { rhythm, scale } from "../utils/typography"
+class Layout extends React.Component {
+  componentDidMount() {
+    const tagManagerArgs = {
+      gtmId:
+        process.env.NODE_ENV === "development" ? "GTM-KPJ9G6X" : "GTM-WPP2498",
+    }
 
-import {
-  rhythm,
-  scale
-} from "../utils/typography"
-class Layout extends React.Component { 
+    TagManager.initialize(tagManagerArgs)
+  }
+
   render() {
-    const {
-      children
-    } = this.props
+    const { children } = this.props
     // const { location, title, children } = this.props
     // const rootPath = `${__PATH_PREFIX__}/`
     let header
@@ -19,38 +23,50 @@ class Layout extends React.Component {
 
     header = (
       <div className="wrapper-header">
-        <h1 style={
-          {
+        <h1
+          style={{
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
-            textAlign: "center"
-          }
-        } >
-          <a href="https://movider.co/blog/"
-            style={
-              {
-                boxShadow: "none",
-                display: "block"
-              }
-            } > < img className="logo"
+            textAlign: "center",
+          }}
+        >
+          <a
+            href="https://movider.co/blog/"
+            style={{
+              boxShadow: "none",
+              display: "block",
+            }}
+          >
+            {" "}
+            <img
+              className="logo"
               src="/blog/images/movider_logo.svg"
-              alt="logo" /> </a> {
-          /* {title} */} </h1 >
+              alt="logo"
+            />{" "}
+          </a>{" "}
+          {/* {title} */}{" "}
+        </h1>
       </div>
     )
-    return (<div>
-      <header > {header} </header>
-      <main className="main-width" > {children} </main>
-      <footer> ©{new Date().getFullYear()}, <a href={`https://movider.co`}
-        style={
-          {
-            boxShadow: "none"
-          }
-        } >
-        Movider.co </a> {` `}
-      </footer>
-    </div>
+    return (
+      <div>
+        <header> {header} </header>
+        <main className="main-width"> {children} </main>
+        <footer>
+          {" "}
+          ©{new Date().getFullYear()},{" "}
+          <a
+            href={`https://movider.co`}
+            style={{
+              boxShadow: "none",
+            }}
+          >
+            Movider.co{" "}
+          </a>{" "}
+          {` `}
+        </footer>
+      </div>
     )
   }
 }

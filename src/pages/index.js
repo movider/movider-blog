@@ -6,20 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-import TagManager from "react-gtm-module"
-
 class BlogIndex extends React.Component {
-
-  componentDidMount() {
-    const tagManagerArgs = {
-      gtmId:
-        process.env.NODE_ENV.trim() === "production"
-          ? "GTM-WPP2498"
-          : "GTM-KPJ9G6X",
-    }
-
-    TagManager.initialize(tagManagerArgs)
-  }
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -34,12 +21,15 @@ class BlogIndex extends React.Component {
           return (
             <div className="wrapper-blog">
               <div class="blog-card">
-                <div key={node.fields.slug} className="moviderBorder moviCenter" >
-                <Link to={node.fields.slug} >
-                  <div className="picCover" >
-                    <img src={node.frontmatter.thumbnail} alt="content" />
-                  </div>
-                </Link >
+                <div
+                  key={node.fields.slug}
+                  className="moviderBorder moviCenter"
+                >
+                  <Link to={node.fields.slug}>
+                    <div className="picCover">
+                      <img src={node.frontmatter.thumbnail} alt="content" />
+                    </div>
+                  </Link>
                   <div className="content-blog">
                     <h2
                       className="titleContent"
@@ -76,7 +66,7 @@ class BlogIndex extends React.Component {
                       Continue Reading→
                     </Link>
                   </div>
-                </div>     
+                </div>
               </div>
             </div>
           )
