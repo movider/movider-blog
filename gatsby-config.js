@@ -90,7 +90,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Lato\:300,400,700`],
+        fonts: [
+          `Lato\:300,400,700`, // you can also specify font weights and styles
+        ],
       },
     },
   ],
